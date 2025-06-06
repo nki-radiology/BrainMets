@@ -4,24 +4,10 @@
 
 </div>
 
-<table width="100%" style="background-color: white; margin: 0px auto; border-collapse: collapse;">
-  <tr>
-    <td align="center" width="50%" style="border: none; padding: 0;">
-      <a href="https://www.nki.nl">
-        <img src=".pictures/nki_logo.jpg"
-             alt="NKI"
-             style="background-color: white; height: 80px; width: auto;"/>
-      </a>
-    </td>
-    <td align="center" width="50%" style="border: none; padding: 0;">
-      <a href="https://www.brainmets.ai">
-        <img src=".pictures/robovision_logo_1.png"
-             alt="Robovision"
-             style="background-color: white; height: 80px; width: auto;"/>
-      </a>
-    </td>
-  </tr>
-</table>
+<div align="center">
+  <img src=".pictures/nki_logo_2.png" alt="NKI" width="200" height="auto" />
+  <img src=".pictures/robovision_logo_3.png" alt="Robovision" width="200" height="auto" />
+</div>
 
 <div align="center">
 
