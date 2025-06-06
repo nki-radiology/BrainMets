@@ -5,8 +5,12 @@
 </div>
 
 <div align="center">
-  <img src=".pictures/nki_logo_2.png" alt="NKI" width="200" height="auto" />
-  <img src=".pictures/robovision_logo_3.png" alt="Robovision" width="200" height="auto" />
+  <a href="https://www.nki.nl">
+    <img src=".pictures/nki_logo_2.png" alt="NKI" width="200" height="auto" />
+  </a>
+  <a href="https://www.brainmets.ai">
+    <img src=".pictures/robovision_logo_3.png" alt="Robovision" width="200" height="auto" />
+  </a>
 </div>
 
 <div align="center">
