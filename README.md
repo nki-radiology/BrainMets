@@ -4,16 +4,20 @@
 
 </div>
 
-<table width="100%" style="background-color: white; margin: 0px auto;">
+<table width="100%" style="background-color: white; margin: 0px auto; border-collapse: collapse;">
   <tr>
-    <td align="center" width="50%">
+    <td align="center" width="50%" style="border: none; padding: 0;">
       <a href="https://www.nki.nl">
-        <img src=".pictures/nki_logo.jpg" alt="NKI" height="80" />
+        <img src=".pictures/nki_logo.jpg"
+             alt="NKI"
+             style="background-color: white; height: 80px; width: auto;"/>
       </a>
     </td>
-    <td align="center" width="50%">
+    <td align="center" width="50%" style="border: none; padding: 0;">
       <a href="https://www.brainmets.ai">
-        <img src=".pictures/robovision_logo_1.png" alt="Robovision" height="80" />
+        <img src=".pictures/robovision_logo_1.png"
+             alt="Robovision"
+             style="background-color: white; height: 80px; width: auto;"/>
       </a>
     </td>
   </tr>
@@ -25,7 +29,7 @@
 
 </div>
 
-Brain Metastasis AI is the result of a collaboration between the [Netherlands Cancer Institute](https://www.nki.nl) (NKI) and [Robovision Healthcare](https://www.brainmets.ai). This repository gives further insights in how the underlying AI model was trained and the evaluation was performed. For more details we would like to refer to the article “L. Topff et al: A Data-Centric Approach to Deep Learning for Brain Metastases Analysis on MRI. Radiology 2025”. To foster transparancy and true usefulness, we provide the [Brain Metastasis AI Test Page](https://testflight.healthcare.robovision.ai/#/ZmyJVF1RCupHEwCZ1WTO), hence, feel free to try it out yourself.
+Brain Metastasis AI is the result of a collaboration between the [Netherlands Cancer Institute](https://www.nki.nl) (NKI) and [Robovision Healthcare](https://www.brainmets.ai). This repository gives further insights in how the underlying AI model was trained and the evaluation was performed. For more details we would like to refer to the article *"Topff L, et al. A Data-centric Approach to Deep Learning for Brain Metastasis Analysis at MRI. Radiology, 2025. DOI: 10.1148/radiol.242416"*. To foster transparancy and true usefulness, we provide the [Brain Metastasis AI Test Page](https://testflight.healthcare.robovision.ai/#/ZmyJVF1RCupHEwCZ1WTO), hence, feel free to try it out yourself.
 
 ---
 
@@ -217,15 +221,15 @@ python evaluation/evaluation.py --postprocess-dir POSTPROCESS_DIR
 ## Citation
 When making use of Brain Metastasis AI, please also acknowledge this by referencing to or citing our work:
 
-Topff L, et al. A Data-Centric Approach to Deep Learning for Brain Metastases Analysis on MRI. J. Radiology, 2025. DOI: 10.1234/jrad.XXXXX.
+Topff L, et al. A Data-centric Approach to Deep Learning for Brain Metastasis Analysis at MRI. Radiology, 2025. DOI: 10.1148/radiol.242416.
 
 ```bibtex
 @article{Topff2025BrainMets,
-  title   = {A Data-Centric Approach to Deep Learning for Brain Metastases Analysis on MRI},
+  title   = {A Data-centric Approach to Deep Learning for Brain Metastasis Analysis at MRI},
   author  = {Topff, Laurens and others},
-  journal = {Journal of Radiology},
+  journal = {Radiology},
   year    = {2025},
-  doi     = {10.1234/jrad.XXXXX},
+  doi     = {10.1148/radiol.242416},
 }
 ```
 
