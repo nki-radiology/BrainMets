@@ -1,9 +1,19 @@
 import os
 import dicom2nifti
+import numpy as np
+import nibabel as nib
 from HD_BET.run import run_hd_bet
 
 
 class Preprocessing(object):
+    @staticmethod
+    def create_dummy_annotations(preprocessing_dir):
+        scan_names = sorted(os.listdir(preprocessing_dir))
+        for i, scan_name in enumerate(scan_names):
+            img = nib.load(os.path.join(preprocessing_dir, scan_name, "brain_masked_mri.nii.gz"))
+            anno = nib.Nifti1Image((np.asarray(img.dataobj) > 0).astype(np.uint8), img.affine)
+            nib.save(anno, os.path.join(preprocessing_dir, scan_name, "annotation.nii.gz"))
+    
     @staticmethod
     def series_to_nifti(dicom_series_directory, nifti_file_path):
         dicom2nifti.dicom_series_to_nifti(dicom_series_directory, nifti_file_path, reorient_nifti=False)
