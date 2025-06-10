@@ -66,17 +66,16 @@ class Training(object):
 
 
 if __name__ == "__main__":
-    # argParser = argparse.ArgumentParser()
-    # argParser.add_argument(
-    #     "--preprocessing-dir", help="Directory in which the preprocessed Nifti files are stored.", required=True
-    # )
-    # argParser.add_argument(
-    #     "--training-dir",
-    #     help="Directory in which the training files will be stored.",
-    #     required=True,
-    # )
-    # args = argParser.parse_args()
-    # Training.run_training(args.preprocessing_dir, args.training_dir)
-    Training.run_training(
-        "/raid/healthcare/jbertels/testing/preprocessing_dir", "/raid/healthcare/jbertels/testing/training_dir"
+    import argparse
+
+    argParser = argparse.ArgumentParser()
+    argParser.add_argument(
+        "--preprocessing-dir", help="Directory in which the preprocessed Nifti files are stored.", required=True
     )
+    argParser.add_argument(
+        "--training-dir",
+        help="Directory in which the training files will be stored.",
+        required=True,
+    )
+    args = argParser.parse_args()
+    Training.run_training(args.preprocessing_dir, args.training_dir)
