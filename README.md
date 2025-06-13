@@ -112,10 +112,8 @@ This will generate:
 PREPROCESSING_DIR/
     scan_001/
         brain_masked_mri.nii.gz
-        ...
     scan_002/
         brain_masked_mri.nii.gz
-        ...
     ...
 ```
 
@@ -130,11 +128,9 @@ PREPROCESSING_DIR/
     scan_001/
         brain_masked_mri.nii.gz
         annotation.nii.gz
-        ...
     scan_002/
         brain_masked_mri.nii.gz
         annotation.nii.gz
-        ...
     ...
 ```
 
@@ -171,20 +167,50 @@ TRAINING_DIR/
 Once there is a trained model available in the TRAINING_DIR, you can also do inference for any PREPROCESSING_DIR and have the result outputted in the INFERENCE_DIR:
 
 ```bash
-python inference/inference.py --preprocessing-dir PREPROCESSING_DIR --inference_dir INFERENCE_DIR
+python inference/inference.py --preprocessing-dir PREPROCESSING_DIR --training-dir TRAINING_DIR --inference_dir INFERENCE_DIR
+```
+
+The INFERENCE_DIR will look like this:
+
+```bash
+INFERENCE_DIR/
+    scan_001/
+        brain_masked_mri.nii.gz (symlink)
+        annotation.nii.gz (symlink - optional)
+        prediction.nii.gz
+    scan_002/
+        brain_masked_mri.nii.gz (symlink)
+        annotation.nii.gz (symlink - optional)
+        prediction.nii.gz
+    ...
 ```
 
 ---
 
 ## Postprocessing
 
-To postprocess an INFERENCE_DIR, do:
+To postprocess an INFERENCE_DIR, make sure you started from a PREPROCESSING_DIR where you added ground truth annotations:
 
 ```bash
 python postprocessing/postprocessing.py --inference_dir INFERENCE_DIR
 ```
 
-This will inject some postprocess files into the INFERENCE_DIR.
+This will inject some result.csv files into the INFERENCE_DIR.
+
+```bash
+INFERENCE_DIR/
+    scan_001/
+        brain_masked_mri.nii.gz (symlink)
+        annotation.nii.gz (symlink)
+        prediction.nii.gz
+        result.csv
+    scan_002/
+        brain_masked_mri.nii.gz (symlink)
+        annotation.nii.gz (symlink)
+        prediction.nii.gz
+        result.csv
+    ...
+```
 
 ---
 
@@ -193,13 +219,16 @@ This will inject some postprocess files into the INFERENCE_DIR.
 To run the evaluation, do:
 
 ```bash
-python evaluation/evaluation.py --postprocess-dir POSTPROCESS_DIR
+python evaluation/evaluation.py --inference-dir INFERENCE_DIR --evaluation-dir EVALUATION_DIR
 ```
 
-```json
-{
-  "": {},
-}
+This will generate the tables and figures like in the paper:
+
+```bash
+EVALUATION_DIR/
+    figure_1.png
+    table_1.csv
+    ...
 ```
 
 ---
