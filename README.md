@@ -1,6 +1,6 @@
 <div align="center">
 
-# Brain Metastasis AI
+# BrainMets AI
 
 </div>
 
@@ -11,11 +11,13 @@
 
 <div align="center">
 
-## A Data-Centric Approach to Deep Learning for Brain Metastases Analysis on MRI 
+## A Data-centric Approach to Deep Learning for Brain Metastasis Analysis at MRI 
 
 </div>
 
-Brain Metastasis AI is the result of a collaboration between the [Netherlands Cancer Institute](https://www.nki.nl) (NKI) and [Robovision Healthcare](https://www.brainmets.ai). This repository gives further insights in how the underlying AI model was trained and the evaluation was performed. For more details we would like to refer to the article *"Topff L, et al. A Data-centric Approach to Deep Learning for Brain Metastasis Analysis at MRI. Radiology, 2025. DOI: 10.1148/radiol.242416"*. To foster transparancy and true usefulness, we provide the [Brain Metastasis AI Test Page](https://testflight.healthcare.robovision.ai/#/ZmyJVF1RCupHEwCZ1WTO), hence, feel free to try it out yourself.
+BrainMets AI is the result of a collaboration between the [Netherlands Cancer Institute](https://www.nki.nl) (NKI) and [Robovision Healthcare](https://www.brainmets.ai). This repository gives further insights in how the underlying AI model was trained and the evaluation was performed. For more details we would like to refer to the article *"Topff L, et al. A Data-centric Approach to Deep Learning for Brain Metastasis Analysis at MRI. Radiology, 2025. DOI: 10.1148/radiol.242416"*.
+
+You can try out the BrainMets AI model on our [Test Page](https://testflight.healthcare.robovision.ai/#/ZmyJVF1RCupHEwCZ1WTO), for research purposes only, not for clinical use.
 
 ---
 
@@ -34,7 +36,7 @@ Brain Metastasis AI is the result of a collaboration between the [Netherlands Ca
 
 ## Overview
 
-The Brain Metastasis AI pipeline is built upon a modified nnU-Net framework to detect and segment brain metastases of all sizes on contrast-enhanced 3D T1-weighted MRI. The repository provides:
+The BrainMets AI pipeline is built upon a modified nnU-Net framework to detect and segment brain metastases of all sizes on contrast-enhanced 3D T1-weighted MRI. The repository provides:
 
 - **Preprocessing**: DICOM to Nifti conversion,  brain extraction and some basic checks.  
 - **Training**: Five-fold cross-validation on the preprocessed dataset.  
@@ -234,14 +236,14 @@ EVALUATION_DIR/
 ---
 
 ## Citation
-When making use of Brain Metastasis AI, please also acknowledge this by referencing to or citing our work:
+When making use of BrainMets AI, please also acknowledge this by referencing to or citing our work:
 
 Topff L, et al. A Data-centric Approach to Deep Learning for Brain Metastasis Analysis at MRI. Radiology, 2025. DOI: 10.1148/radiol.242416.
 
 ```bibtex
 @article{Topff2025BrainMets,
   title   = {A Data-centric Approach to Deep Learning for Brain Metastasis Analysis at MRI},
-  author  = {Topff, Laurens and others},
+  author  = {Topff, Laurens et al.},
   journal = {Radiology},
   year    = {2025},
   doi     = {10.1148/radiol.242416},
@@ -253,6 +255,6 @@ Topff L, et al. A Data-centric Approach to Deep Learning for Brain Metastasis An
 ## Contact
 For questions, bug reports, or feature requests, please open an issue on GitHub or contact:
 
-Laurens Topff, MD, PhD (First author) — l.topff@nki.nl
+Laurens Topff, MD, PhD (Corresponding author) — l.topff@nki.nl
 
-Thank you for using our Brain Metastasis AI!
+Thank you for using our BrainMets AI!
