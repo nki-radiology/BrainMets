@@ -15,7 +15,7 @@
 
 </div>
 
-BrainMets AI is the result of a collaboration between the [Netherlands Cancer Institute](https://www.nki.nl) (NKI) and [Robovision Healthcare](https://www.brainmets.ai). This repository gives further insights in how the underlying AI model was trained and the evaluation was performed. For more details we would like to refer to the article *"Topff L, Petrychenko L, Jain N, et al. A Data-Centric Approach to Deep Learning for Brain Metastasis Analysis at MRI. Radiology. 2025;315(3):e242416. doi: 10.1148/radiol.242416."*.
+BrainMets AI is the result of a collaboration between the [Netherlands Cancer Institute](https://www.nki.nl) (NKI) and [Robovision Healthcare](https://www.brainmets.ai). This repository gives further insights in how the underlying AI model was trained and the evaluation was performed. For more details we would like to refer to the article *"Topff L, Petrychenko L, Jain N, et al. A Data-Centric Approach to Deep Learning for Brain Metastasis Analysis at MRI. Radiology. 2025;315(3):e242416. doi: [10.1148/radiol.242416](https://doi.org/10.1148/radiol.242416)."*
 
 You can try out the BrainMets AI model on our [Test Page](https://testflight.healthcare.robovision.ai/#/ZmyJVF1RCupHEwCZ1WTO), for research purposes only, not for clinical use.
 
