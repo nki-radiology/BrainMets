@@ -11,11 +11,11 @@
 
 <div align="center">
 
-## A Data-centric Approach to Deep Learning for Brain Metastasis Analysis at MRI 
+## A Data-Centric Approach to Deep Learning for Brain Metastasis Analysis at MRI 
 
 </div>
 
-BrainMets AI is the result of a collaboration between the [Netherlands Cancer Institute](https://www.nki.nl) (NKI) and [Robovision Healthcare](https://www.brainmets.ai). This repository gives further insights in how the underlying AI model was trained and the evaluation was performed. For more details we would like to refer to the article *"Topff L, et al. A Data-centric Approach to Deep Learning for Brain Metastasis Analysis at MRI. Radiology, 2025. DOI: 10.1148/radiol.242416"*.
+BrainMets AI is the result of a collaboration between the [Netherlands Cancer Institute](https://www.nki.nl) (NKI) and [Robovision Healthcare](https://www.brainmets.ai). This repository gives further insights in how the underlying AI model was trained and the evaluation was performed. For more details we would like to refer to the article *"Topff L, Petrychenko L, Jain N, et al. A Data-Centric Approach to Deep Learning for Brain Metastasis Analysis at MRI. Radiology. 2025;315(3):e242416. doi: 10.1148/radiol.242416."*.
 
 You can try out the BrainMets AI model on our [Test Page](https://testflight.healthcare.robovision.ai/#/ZmyJVF1RCupHEwCZ1WTO), for research purposes only, not for clinical use.
 
@@ -238,15 +238,20 @@ EVALUATION_DIR/
 ## Citation
 When making use of BrainMets AI, please also acknowledge this by referencing to or citing our work:
 
-Topff L, et al. A Data-centric Approach to Deep Learning for Brain Metastasis Analysis at MRI. Radiology, 2025. DOI: 10.1148/radiol.242416.
+Topff L, Petrychenko L, Jain N, et al. A Data-Centric Approach to Deep Learning for Brain Metastasis Analysis at MRI. Radiology. 2025;315(3):e242416. doi: 10.1148/radiol.242416.
 
 ```bibtex
-@article{Topff2025BrainMets,
-  title   = {A Data-centric Approach to Deep Learning for Brain Metastasis Analysis at MRI},
-  author  = {Topff, Laurens et al.},
-  journal = {Radiology},
-  year    = {2025},
-  doi     = {10.1148/radiol.242416},
+@article{topff2025datacentric-ef3, 
+  year     = {2025}, 
+  title    = {A Data-Centric Approach to Deep Learning for Brain Metastasis Analysis at {MRI}}, 
+  author   = {Topff, Laurens and Petrychenko, Liliana and Jain, Neeraj and Lingier, Sara and Bertels, Jeroen and Astudillo, Patricio and Prosec, Milan and Menéndez Fernández-Miranda, Pablo and Gevaert, Olivier and Smits, Marion and Derks, Sophie and Verhaak, Eline and Hanssens, Patrick E J and Marco de Lucas, Enrique and Sutil, Rodrigo and Dominguez, Pablo D and Negoita, Adina and Visser, Ernst and Corral Fontecha, David and Braun, Loes M M and Brandsma, Dieta and Visser, Jacob J and Ranschaert, Erik R and Groot Lipman, Kevin B W and Beets-Tan, Regina G H}, 
+  journal  = {Radiology}, 
+  issn     = {0033-8419}, 
+  doi      = {10.1148/radiol.242416}, 
+  pmid     = {40552999}, 
+  pages    = {e242416}, 
+  number   = {3}, 
+  volume   = {315}
 }
 ```
 
